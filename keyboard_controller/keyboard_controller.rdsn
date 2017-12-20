@@ -1,0 +1,108 @@
+<!DOCTYPE riviera-design>
+<riviera-design>
+    <version value="2011.10.72.4371"/>
+    <configurations>
+        <configuration name="optimized"/>
+        <configuration name="debug"/>
+    </configurations>
+    <properties>
+        <configuration name="optimized">
+            <library>
+                <active-library value="keyboard_controller"/>
+            </library>
+            <global>
+                <intermediate-dir value="./optimized"/>
+            </global>
+            <compilation>
+                <cpp>
+                    <generate-debug-information value="false"/>
+                </cpp>
+                <vhdl>
+                    <generate-debug-information value="false"/>
+                </vhdl>
+                <verilog>
+                    <generate-debug-information value="false"/>
+                </verilog>
+            </compilation>
+        </configuration>
+        <configuration name="debug">
+            <library>
+                <active-library value="keyboard_controller"/>
+            </library>
+            <global>
+                <intermediate-dir value="./debug"/>
+            </global>
+            <compilation>
+                <cpp>
+                    <generate-debug-information value="true"/>
+                </cpp>
+                <vhdl>
+                    <generate-debug-information value="true"/>
+                </vhdl>
+                <verilog>
+                    <generate-debug-information value="true"/>
+                </verilog>
+            </compilation>
+            <simulation>
+                <general>
+                    <enable-debug value="true"/>
+                </general>
+            </simulation>
+        </configuration>
+    </properties>
+    <structure>
+        <file path="readme.txt"/>
+        <file path="src/runme.do"/>
+        <file path="src/variables.do"/>
+        <file path="src/test_inputs_1.tst"/>
+        <file path="src/test_inputs_2.tst"/>
+        <file path="src/tb.v"/>
+        <file path="src/send_test.v"/>
+        <file path="src/adder_subtractor.v"/>
+        <file path="src/alu.v"/>
+        <file path="src/ascii_codes.v"/>
+        <file path="src/calculation_controller.v"/>
+        <file path="src/cordic.v"/>
+        <file path="src/defines.v"/>
+        <file path="src/divider.v"/>
+        <file path="src/input_buffer.v"/>
+        <file path="src/keyboard_controller.v"/>
+        <file path="src/multiplier.v"/>
+        <file path="src/ps_2_controller.vhd"/>
+        <file path="src/scan_codes.v">
+            <properties>
+                <configuration name="optimized">
+                    <compilation>
+                        <exclude value="true"/>
+                    </compilation>
+                </configuration>
+                <configuration name="debug">
+                    <compilation>
+                        <exclude value="true"/>
+                    </compilation>
+                </configuration>
+            </properties>
+        </file>
+        <file path="src/scan2ascii.v"/>
+        <file path="src/scan2symbol.v"/>
+        <file path="src/settings.v">
+            <properties>
+                <configuration name="optimized">
+                    <compilation>
+                        <exclude value="true"/>
+                    </compilation>
+                </configuration>
+                <configuration name="debug">
+                    <compilation>
+                        <exclude value="true"/>
+                    </compilation>
+                </configuration>
+            </properties>
+        </file>
+        <file path="src/spec_symb_detect.v"/>
+        <file path="src/symbol_codes.v"/>
+        <file path="src/symbol2ascii.v"/>
+        <file path="src/vga_write.v"/>
+    </structure>
+    <dependencies/>
+</riviera-design>

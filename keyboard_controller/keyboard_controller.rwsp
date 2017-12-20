@@ -1,0 +1,18 @@
+<!DOCTYPE riviera-workspace>
+<riviera-workspace>
+    <version value="2011.10.72.4371"/>
+    <active-design name="keyboard_controller"/>
+    <active-configuration name="debug"/>
+    <designs>
+        <design path="keyboard_controller.rdsn"/>
+    </designs>
+    <dependencies/>
+    <configurations>
+        <configuration name="optimized">
+            <design name="keyboard_controller" configuration="optimized"/>
+        </configuration>
+        <configuration name="debug">
+            <design name="keyboard_controller" configuration="debug"/>
+        </configuration>
+    </configurations>
+</riviera-workspace>
